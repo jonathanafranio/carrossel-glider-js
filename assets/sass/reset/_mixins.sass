@@ -1,0 +1,51 @@
+/* ========================================
+ *
+ Transitions
+ *
+ ======================================== */
+
+=transition-1($var1)
+	-webkit-transition: $var1
+	-moz-transition: $var1
+	-o-transition: $var1
+	transition: $var1
+
+=transition-2($var1, $var2)
+	-webkit-transition: $var1, $var2
+	-moz-transition: $var1, $var2
+	-o-transition: $var1, $var2
+	transition: $var1, $var2
+
+=transition-3($var1, $var2, $var3)
+	-webkit-transition: $var1, $var2, $var3
+	-moz-transition: $var1, $var2, $var3
+	-o-transition: $var1, $var2, $var3
+	transition: $var1, $var2, $var3
+
+=placeholder($var1)
+	&.placeholder
+		color: $var1
+		opacity: 1
+	&:-moz-placeholder
+		color: $var1
+		opacity: 1
+	&::-moz-placeholder
+		color: $var1
+		opacity: 1
+	&::-webkit-input-placeholder
+		color: $var1
+		opacity: 1
+
+=columns($var1, $var2, $var3)
+	-webkit-column-count: $var1
+	-webkit-column-width: $var2
+	-webkit-column-gap: $var3
+	-moz-column-count: $var1
+	-moz-column-width: $var2
+	-moz-column-gap: $var3
+	-ms-column-count: $var1
+	-ms-column-width: $var2
+	-ms-column-gap: $var3
+	column-count: $var1
+	column-width: $var2
+	column-gap: $var3

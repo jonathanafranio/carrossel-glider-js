@@ -1,0 +1,48 @@
+/* ========================================
+ Row & Site container
+ ======================================== */
+.row
+	width: 100%
+
+.container
+	position: relative
+	width: 100%
+	max-width: $max-size
+	margin: auto
+	padding: 0 $padding
+	*zoom: 1
+	&:before,
+	&:after
+		content: " "
+		display: table
+	&:after
+		clear: both
+
+/* ========================================
+ Col
+ ======================================== */
+.col
+	display: inline-block
+
+.t-valign
+	vertical-align: top
+
+.m-valign
+	vertical-align: middle
+
+.b-valign
+	vertical-align: bottom
+
+/* ========================================
+ Col and Viewport sizes
+ ======================================== */
+@each $prefix, $size-value, $column-number, $pos in $sizes
+	@if ($pos == last)
+		@for $aux from 1 through $column-number
+			.#{$prefix}-#{$aux}
+				width: 100%/$column-number*$aux
+	@else
+		@media screen and (max-width: $size-value)
+			@for $aux from 1 through $column-number
+				.#{$prefix}-#{$aux}
+					width: 100%/$column-number*$aux
