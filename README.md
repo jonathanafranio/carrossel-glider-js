@@ -1,12 +1,13 @@
-# stream-vue
-Stream com séries e filmes favoritos, puxando o conteúdo de uma API REST de um site em Wordpress.
+# Glider.js for WordPress
 
-Aqui é usado:
-- Bulma para css;
-- Font Awesome para os ícones;
-- Vue Router;
-- Slick para o carousel;
-- Vue-Video-Player para o play dos vídeos;
+Em português:
+O [Glider.js](https://nickpiscitelli.github.io/Glider.js/), o Carousel em javascript puro (vanilla.js) para WordPress.
+
+In English:
+The [Glider.js](https://nickpiscitelli.github.io/Glider.js/), Carousel in pure javascript (vanilla.js) for WordPress 
+
+En español:
+El [Glider.js](https://nickpiscitelli.github.io/Glider.js/), el carrusel en javascript puro (vanilla.js) para WordPress 
 
 ## Project setup
 ```
