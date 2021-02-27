@@ -171,6 +171,7 @@
         height: auto
         border: 1px solid #fff
         line-height: 1
+        color: #fff
         background: #000
         cursor: pointer
         text-shadow: none
@@ -185,10 +186,42 @@
             background: #fff
             border: 1px solid #000
 
+    &__small
+        &-thumb
+            display: block
+            width: 100%
+            position: relative
+            @media screen and ( min-width: 1024px)
+                display: flex
+                justify-content: space-between
+
+        &-img
+            width: 100%
+            @media screen and ( min-width: 1024px)
+                display: flex
+                align-items: center
+
+        &-img
+            @media screen and ( min-width: 1024px)
+                width: 41.66667%
+                min-width: 410px
+                padding: 10px 0
+                order: 2
+
+        &-text
+            @media screen and ( min-width: 1024px)
+                width: 58.33333%
+                padding: 10px 0
+                order: 1
+
+
+
+
 .half-container
     .glider__text
         @media screen and ( min-width: 1024px)
             width: 45%
+            min-width: 440px
             height: auto
             min-height: 70%
             max-height: 80%
@@ -208,3 +241,28 @@
             max-height: 75px
             overflow: hidden
             -webkit-box-orient: vertical
+
+.only-text
+    .glider__text
+        position: relative
+        background: transparent
+        color: #000
+        text-shadow: none
+
+    .glider__read-more
+        color: #fff
+        border-color: #000
+        &:hover
+            color: #000
+            background: #fff
+            border: 1px solid #000
+
+    .glider__text-inner
+        padding: 10px 50px 20px
+        @media screen and ( max-width: 767px)
+            padding: 10px 30px 20px
+
+    .glider__text-txt
+        margin-bottom: 10px
+        @media screen and ( max-width: 767px)
+            display: block

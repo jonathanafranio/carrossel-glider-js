@@ -14,6 +14,8 @@ include 'includes/custom-post-carousel.php';
 include 'includes/only-images.php';
 include 'includes/text-full-image.php';
 include 'includes/text-half-image.php';
+include 'includes/only-text.php';
+include 'includes/small-thumb.php';
 
 if( ! defined( 'GFW_URL' ) ) {
 	define( 'GFW_URL', plugin_dir_url( __FILE__ ) ); // Plugin url
@@ -57,6 +59,10 @@ function gfw_carousel_post( $gfw_post ) {
         $return_glider = textFullImage($gfwLoop, $atts);
     } elseif ($atts['design'] == 'text-half-image'){
         $return_glider = textHalfImage($gfwLoop, $atts);
+    } elseif ($atts['design'] == 'only_text'){
+        $return_glider = onlyText($gfwLoop, $atts);
+    } elseif ($atts['design'] == 'small-thumb'){
+        $return_glider = smallThumb($gfwLoop, $atts);
     } else {
         $return_glider = only_images($gfwLoop, $atts);
     }

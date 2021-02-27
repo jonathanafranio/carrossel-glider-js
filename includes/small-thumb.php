@@ -1,10 +1,10 @@
 <?php
-function only_images($gfwLoop, $atts){
+function smallThumb($gfwLoop, $atts){
     $returnHtml = "";
     
     if ( $gfwLoop->have_posts() ) :    
         $startHtml = '<div class="glider-contain">
-        <div class="glider only-text" 
+        <div class="glider" 
             id="'.$atts['id'].'" 
             data-desktop-show="'.$atts['desktop-show'].'" 
             data-laptop-show="'.$atts['laptop-show'].'" 
@@ -19,15 +19,23 @@ function only_images($gfwLoop, $atts){
             global $post;
             $linkCarousel = get_post_meta($post->ID, 'url_link', true);
             $htmlCarousel .= '<div>';
-            if($linkCarousel != '') $htmlCarousel .= '<a href="'.$linkCarousel.'" class="glider__link">';
-            else $htmlCarousel .= '<span  class="glider__item">'; 
+            $htmlCarousel .= '<span  class="glider__small-thumb">'; 
                 
                 if ( has_post_thumbnail() ):
+                    $htmlCarousel .= '<div class="glider__small-img">';
                     $htmlCarousel .= get_the_post_thumbnail( null, $atts['resolution'] );
+                    $htmlCarousel .= '</div>';
                 endif;
 
-            if($linkCarousel != '') $htmlCarousel .= '</a>';
-            else $htmlCarousel .= '</span>';
+                $htmlCarousel .= '<article class="glider__small-text">';
+                    $htmlCarousel .= '<div class="glider__text-inner">';
+                    $htmlCarousel .= '<h3 class="glider__text-title">'.get_the_title().'</h3>';
+                    $htmlCarousel .= '<span class="glider__text-txt">'.get_the_excerpt().'</span>';
+                    if($linkCarousel != '') $htmlCarousel .= '<a href="'.$linkCarousel.'" class="glider__read-more">Leia Mais</a>';
+                    $htmlCarousel .= '</div>';
+                $htmlCarousel .= '</article>';
+
+            $htmlCarousel .= '</span>';
             $htmlCarousel .= '</div>';
         endwhile;
 

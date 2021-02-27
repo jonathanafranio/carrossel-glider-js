@@ -1,5 +1,5 @@
 <?php
-function only_images($gfwLoop, $atts){
+function onlyText($gfwLoop, $atts){
     $returnHtml = "";
     
     if ( $gfwLoop->have_posts() ) :    
@@ -19,15 +19,18 @@ function only_images($gfwLoop, $atts){
             global $post;
             $linkCarousel = get_post_meta($post->ID, 'url_link', true);
             $htmlCarousel .= '<div>';
-            if($linkCarousel != '') $htmlCarousel .= '<a href="'.$linkCarousel.'" class="glider__link">';
-            else $htmlCarousel .= '<span  class="glider__item">'; 
-                
-                if ( has_post_thumbnail() ):
-                    $htmlCarousel .= get_the_post_thumbnail( null, $atts['resolution'] );
-                endif;
+            $htmlCarousel .= '<span  class="glider__item">';
 
-            if($linkCarousel != '') $htmlCarousel .= '</a>';
-            else $htmlCarousel .= '</span>';
+                $htmlCarousel .= '<article class="glider__text">';
+                    $htmlCarousel .= '<div class="glider__text-inner">';
+                    $htmlCarousel .= '<h3 class="glider__text-title">'.get_the_title().'</h3>';
+                    $htmlCarousel .= '<span class="glider__text-txt">'.get_the_excerpt().'</span>';
+                    if($linkCarousel != '') $htmlCarousel .= '<a href="'.$linkCarousel.'" class="glider__read-more">Leia Mais</a>';
+
+                    $htmlCarousel .= '</div>';
+                $htmlCarousel .= '</article>';
+
+            $htmlCarousel .= '</span>';
             $htmlCarousel .= '</div>';
         endwhile;
 
