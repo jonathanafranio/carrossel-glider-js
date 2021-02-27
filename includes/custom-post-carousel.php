@@ -1,5 +1,4 @@
 <?php
-
 function carousel_post() {
     $labels = array(
         'name' => _x('Carousel', 'post type general name'),
@@ -82,9 +81,4 @@ function save_link(){
     global $post;
     update_post_meta($post->ID, 'url_link', $_POST['url_link']);
 }
-
-
-function teste() {
-
-    return 'testando funcao externa';
-}
+?>

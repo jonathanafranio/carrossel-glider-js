@@ -10,12 +10,18 @@ Text Domain: glider-for-wp
 License: GPLv2 or later
 */
 
+include 'includes/gfw-options.php';
+
+
+
 include 'includes/custom-post-carousel.php';
 include 'includes/only-images.php';
 include 'includes/text-full-image.php';
 include 'includes/text-half-image.php';
 include 'includes/only-text.php';
 include 'includes/small-thumb.php';
+include 'includes/custom-style.php';
+
 
 if( ! defined( 'GFW_URL' ) ) {
 	define( 'GFW_URL', plugin_dir_url( __FILE__ ) ); // Plugin url
@@ -77,11 +83,17 @@ function gfw_carousel_post( $gfw_post ) {
 add_shortcode('gfw', 'gfw_carousel_post');
 
 function glider_scripts (){
-    wp_enqueue_style( 'glider_css', GFW_URL.'assets/css/main-glider.css' );
+    global $post;
+    if ( strstr( $post->post_content, '[gfw ' ) ) {
+        wp_enqueue_style( 'glider_css', GFW_URL.'assets/css/main-glider.css' );
 
-    wp_enqueue_script( 'glider_js', GFW_URL.'assets/js/glider.min.js', array(), false, 'true' );
-    wp_enqueue_script( 'main-glider_js', GFW_URL.'assets/js/main-glider.min.js', array(), false, 'true' );
+        wp_enqueue_script( 'glider_js', GFW_URL.'assets/js/glider.min.js', array(), false, 'true' );
+        wp_enqueue_script( 'main-glider_js', GFW_URL.'assets/js/main-glider.min.js', array(), false, 'true' );
+
+        add_action( 'wp_head', 'styleCustom' );
+    }
 }
 // Scrips e CSS
 add_action( 'wp_enqueue_scripts', 'glider_scripts');
+
 ?>
