@@ -29,7 +29,7 @@ function textHalfImage($gfwLoop, $atts){
                     $htmlCarousel .= '<div class="glider__text-inner">';
                     $htmlCarousel .= '<h3 class="glider__text-title">'.get_the_title().'</h3>';
                     $htmlCarousel .= '<span class="glider__text-txt">'.get_the_excerpt().'</span>';
-                    if($linkCarousel != '') $htmlCarousel .= '<a href="'.$linkCarousel.'" class="glider__read-more">Leia Mais</a>';
+                    if($linkCarousel != '') $htmlCarousel .= '<a href="'.$linkCarousel.'" target="'.$target_link.'" class="glider__read-more">Leia Mais</a>';
 
                     $htmlCarousel .= '</div>';
                 $htmlCarousel .= '</article>';

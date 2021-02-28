@@ -19,7 +19,7 @@ function only_images($gfwLoop, $atts){
             global $post;
             $linkCarousel = get_post_meta($post->ID, 'url_link', true);
             $htmlCarousel .= '<div>';
-            if($linkCarousel != '') $htmlCarousel .= '<a href="'.$linkCarousel.'" class="glider__link">';
+            if($linkCarousel != '') $htmlCarousel .= '<a href="'.$linkCarousel.'" target="'.$target_link.'" class="glider__link">';
             else $htmlCarousel .= '<span  class="glider__item">'; 
                 
                 if ( has_post_thumbnail() ):
