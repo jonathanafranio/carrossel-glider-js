@@ -12,8 +12,6 @@ License: GPLv2 or later
 
 include 'includes/gfw-options.php';
 
-
-
 include 'includes/custom-post-carousel.php';
 include 'includes/only-images.php';
 include 'includes/text-full-image.php';
@@ -73,12 +71,27 @@ function gfw_carousel_post( $gfw_post ) {
         $return_glider = only_images($gfwLoop, $atts);
     }
     //return 'GFW_URL '.GFW_URL;
+
+    if($atts['desktop-show'] > 1 && $atts['laptop-show'] > 1 && intval($atts['spaces']) > 0){
+        $paddings = intval($atts['spaces']) / 2;
+
+        $return_glider .= '<style type="text/css">';
+        if($atts['tablet-scroll'] > 1) {
+            $return_glider .= '@media screen and ( min-width: 768px){';
+        } else {
+            $return_glider .= '@media screen and ( min-width: 1024px){';
+        }
+        $return_glider .= '#'.$atts['id'].' { width: calc( 100% + '.($paddings*2).'px ); margin: 0 -'.$paddings.'px; }';
+        $return_glider .= '#'.$atts['id'].' .glider-slide { padding: 0px '.$paddings.'px; }';
+
+        $return_glider .= '}';
+        //$atts['id']
+        $return_glider .= '</style>';
+    }
+    //'tablet-show' => 1)
+
     return $return_glider;
 }
-
-//https://nickpiscitelli.github.io/Glider.js/
-//https://demo.wponlinesupport.com/slick-slider-demo/
-//http://jonathan.meus.br/?page_id=109
 
 add_shortcode('gfw', 'gfw_carousel_post');
 
