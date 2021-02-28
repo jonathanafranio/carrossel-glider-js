@@ -66,6 +66,7 @@ add_action('init', 'carousel_post');
 
 function link_meta_box() {
     add_meta_box('meta_box_test', __('Link'), 'link_admin', 'carousel', 'normal', 'high');
+    add_meta_box('meta_box_test2', __('Target'), 'target_admin', 'carousel', 'normal', 'high');
 }
 
 function link_admin(){
@@ -75,10 +76,31 @@ function link_admin(){
     echo '<input type="url" name="url_link" id="url_link" style="width: 100%;" value="'.$metaBoxValor.'" />';
 }
 
+function target_admin(){
+    global $post;
+    $metaBoxValor = get_post_meta($post->ID, 'target_link', true);
+    echo '<label for="target_link">Abrir na mesma janela?</label>';
+    echo '<select name="target_link" id="target_link" style="width: 100%;">';
+    if($metaBoxValor == "_self") {
+        echo '<option value="_self" selected>Na mesma janela.</option>';
+    } else {
+        echo '<option value="_self">Na mesma janela.</option>';
+    }
+
+    if($metaBoxValor == "_blank") {
+        echo '<option value="_blank" selected>Em uma nova janela.</option>';
+    } else {
+        echo '<option value="_blank">Em uma nova janela.</option>';
+    }
+    echo '</select>';
+}
+
+
 add_action('save_post', 'save_link');
 
 function save_link(){
     global $post;
     update_post_meta($post->ID, 'url_link', $_POST['url_link']);
+    update_post_meta($post->ID, 'target_link', $_POST['target_link']);
 }
 ?>

@@ -174,9 +174,6 @@ function gfw_theme_options_page(){
                 document.getElementById('mouse-color-link').addEventListener('change', changeColor('mouse-color-link', '#000000'));
 
                 document.getElementById('form-upgrade-glider').submit();
-                //alert("vai tomar no cu!!!! _|_");
-
-
             });
 
             function changeColor(id, val) {
