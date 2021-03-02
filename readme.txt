@@ -7,11 +7,11 @@ Stable tag: 5.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Glider.js, Carousel in pure javascript (vanilla.js) for WordPress
+Glider.js, Carousel in pure javascript (vanilla.js) for WP
 
 == Description ==
 
-Glider.js, Carousel in pure javascript (vanilla.js) for WordPress
+Glider.js, Carousel in pure javascript (vanilla.js) for WP
 
 = Docs and support =
 
