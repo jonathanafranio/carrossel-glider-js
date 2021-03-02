@@ -8,6 +8,7 @@ Author: Jonathan Afranio
 Author URI: https://psdtohtmlandcss.com.br/jonathan/
 Text Domain: glider-for-wp
 License: GPLv2 or later
+Version: 1.0.0
 */
 
 include 'includes/gfw-options.php';
