@@ -36,7 +36,7 @@ Agregue el código a continuación a la página, publicación y plantilla que de
 
 ## Atributos:
 
-### category:
+### category
 ```
 [gfw category="slug-taxonomy-carousel"]
 ```
@@ -86,7 +86,7 @@ laptop-show: define la cantidad de elementos que se mostrarán en el carrusel co
 
 ### tablet-show
 ```
-[gfw laptop-show="3"]
+[gfw tablet-show="3"]
 ```
 Em português:
 Predefinido: "1"
@@ -242,12 +242,12 @@ Qualquer valor diferente dessas opções, sera considerado o valor predefinido: 
 
 In English:
 Default: "full"
-resolution: it is to choose the carousel layout, for this attribute, you can choose the following options: "text-full-image"; "text-half-image"; "only_text"; "small-thumb"; "only-images";
+resolution: it is to choose the carousel layout, for this attribute, you can choose the following options: "thumbnail"; "medium"; "medium_large"; "large"; "full";
 Any value other than these options will be considered the default value: "only-images". 
 
 En español:
 Defecto: "full" 
-resolution: é para escolher a resolução da imagem cadastrada do carrossel, para esse atributo, pode escolher as seguintes opções: "thumbnail"; "médio"; "médio Grande"; "ampla"; "completo";
+resolution: é para escolher a resolução da imagem cadastrada do carrossel, para esse atributo, pode escolher as seguintes opções: "thumbnail"; "medium"; "medium_large"; "large"; "full";
 Qualquer valor diferente dessas opções, ser considerado o valor predefinido: "full".
 
 ### spaces
