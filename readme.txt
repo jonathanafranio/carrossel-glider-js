@@ -15,11 +15,11 @@ Glider.js, Carousel in pure javascript (vanilla.js) for WP
 
 = Docs and support =
 
-You can find [docs](https://psdtohtmlandcss.com.br/jonathan/glider-js/), [git](https://github.com/jonathanafranio/glider-for-wp/).  When you are unable to find what you are looking for in the documentation, send an email to jonathan.afranio.s@gmail.com 
+You can find [docs](https://psdtohtmlandcss.com.br/jonathan/glider-js/), [git](https://github.com/jonathanafranio/carrossel-glider-js/).  When you are unable to find what you are looking for in the documentation, send an email to jonathan.afranio.s@gmail.com 
 
 == Installation ==
 
-1. Upload the entire `glider-for-wp` folder to the `/wp-content/plugins/` directory.
+1. Upload the entire `carrossel-glider-js` folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the **Plugins** screen (**Plugins > Installed Plugins**).
 
 You will find **Carousel** menu in your WordPress admin screen.
