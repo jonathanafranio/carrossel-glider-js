@@ -1,4 +1,4 @@
-# Glider.js for WP
+# Carrossel with Glider.js
 
 Em português:
 O [Glider.js](https://nickpiscitelli.github.io/Glider.js/), o Carousel em javascript puro (vanilla.js) para WordPress.

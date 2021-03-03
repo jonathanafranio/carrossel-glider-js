@@ -1,12 +1,11 @@
 <?php
-
 /*
-Plugin Name: Glider.js For WP
+Plugin Name: Carrossel with Glider.js
 Plugin URI: https://psdtohtmlandcss.com.br/jonathan/glider-js/
 Description: Glider.js, o Carousel em javascript puro (vanilla.js) para WP
 Author: Jonathan Afranio
 Author URI: https://psdtohtmlandcss.com.br/jonathan/
-Text Domain: glider-for-wp
+Text Domain: carrossel-glider-js
 License: GPLv2 or later
 Version: 1.0.0
 */

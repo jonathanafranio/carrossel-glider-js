@@ -35,7 +35,7 @@ function gliderSlide(gliderId) {
         // Mobile-first defaults
         slidesToShow: mobileShow,
         slidesToScroll: 1,
-        draggable: true,
+        //draggable: true,
         rewind: infinit,
         dots: dots == 'true' ? `#dots-${gliderId}` : ``,
         arrows: arrows == 'true' ?  objArrows : '',
