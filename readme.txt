@@ -1,4 +1,4 @@
-=== Glider.js For WP ===
+=== Carrossel with Glider.js ===
 Contributors: jonathanafranio89
 Tags: slider, carousel
 Requires at least: 1.0
