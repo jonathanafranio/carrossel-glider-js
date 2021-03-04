@@ -1,5 +1,5 @@
 <?php
-function carousel_post() {
+function cgj_cpt() {
     $labels = array(
         'name' => _x('Carousel', 'post type general name'),
         'singular_name' => _x('carousel', 'post type singular name'),
@@ -27,7 +27,7 @@ function carousel_post() {
         'menu_position' => 5,
         'menu_icon' => 'dashicons-slides',
         'supports' => array('title','editor','thumbnail','revisions'),
-        'register_meta_box_cb' => 'link_meta_box',
+        'register_meta_box_cb' => 'cgj_link_meta_box',
         'show_in_rest' => true,
     );
 
@@ -62,21 +62,21 @@ function carousel_post() {
     );
 }
 
-add_action('init', 'carousel_post');
+add_action('init', 'cgj_cpt');
 
-function link_meta_box() {
-    add_meta_box('meta_box_test', __('Link'), 'link_admin', 'carousel', 'normal', 'high');
-    add_meta_box('meta_box_test2', __('Target'), 'target_admin', 'carousel', 'normal', 'high');
+function cgj_link_meta_box() {
+    add_meta_box('meta_box_test', __('Link'), 'cgj_link_admin', 'carousel', 'normal', 'high');
+    add_meta_box('meta_box_test2', __('Target'), 'cgj_target_admin', 'carousel', 'normal', 'high');
 }
 
-function link_admin(){
+function cgj_link_admin(){
     global $post;
     $metaBoxValor = esc_url( get_post_meta($post->ID, 'url_link', true) );
     echo '<label for="url_link">URL: </label>';
     echo '<input type="url" name="url_link" id="url_link" style="width: 100%;" value="'.$metaBoxValor.'" />';
 }
 
-function target_admin(){
+function cgj_target_admin(){
     global $post;
     $metaBoxValor = get_post_meta($post->ID, 'target_link', true);
     echo '<label for="target_link">Abrir na mesma janela?</label>';
@@ -96,9 +96,9 @@ function target_admin(){
 }
 
 
-add_action('save_post', 'save_link');
+add_action('save_post', 'cgj_save_link');
 
-function save_link(){
+function cgj_save_link(){
     global $post;
     $urlLink = sanitize_text_field( $_POST['url_link'] );
     $targetLink = sanitize_text_field( $_POST['target_link'] );

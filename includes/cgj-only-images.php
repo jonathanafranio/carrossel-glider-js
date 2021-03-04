@@ -1,5 +1,5 @@
 <?php
-function only_images($gfwLoop, $atts){
+function cgj_only_images($gfwLoop, $atts){
     $returnHtml = "";
     
     if ( $gfwLoop->have_posts() ) :    

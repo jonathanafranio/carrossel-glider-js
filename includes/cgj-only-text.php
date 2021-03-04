@@ -1,5 +1,5 @@
 <?php
-function onlyText($gfwLoop, $atts){
+function cgj_onlyText($gfwLoop, $atts){
     $returnHtml = "";
     
     if ( $gfwLoop->have_posts() ) :    

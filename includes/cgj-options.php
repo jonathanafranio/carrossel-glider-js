@@ -196,21 +196,21 @@ function gfw_validate_options( $input ) {
     $settings = get_option( 'gfw_options', $gfw_options );
     
     //GENERAL
-	$input['arrows_colors'] = $input['arrows_colors'];
-	$input['mouse_arrows'] = $input['mouse_arrows'];
-	$input['arrows_disable'] = $input['arrows_disable'];
-    $input['bullets_colors'] = $input['bullets_colors'];
-    $input['mouse_bullets'] = $input['mouse_bullets'];
+	$input['arrows_colors'] = wp_filter_nohtml_kses( $input['arrows_colors'] );
+	$input['mouse_arrows'] = wp_filter_nohtml_kses( $input['mouse_arrows'] );
+	$input['arrows_disable'] = wp_filter_nohtml_kses( $input['arrows_disable'] );
+    $input['bullets_colors'] = wp_filter_nohtml_kses( $input['bullets_colors'] );
+    $input['mouse_bullets'] = wp_filter_nohtml_kses( $input['mouse_bullets'] );
 
-    $input['bg_text'] = $input['bg_text'];
-    $input['text_color'] = $input['text_color'];
-    $input['only_color'] = $input['only_color'];
+    $input['bg_text'] = wp_filter_nohtml_kses( $input['bg_text'] );
+    $input['text_color'] = wp_filter_nohtml_kses( $input['text_color'] );
+    $input['only_color'] = wp_filter_nohtml_kses( $input['only_color'] );
 
 
-    $input['bg-link'] = $input['bg-link'];
-    $input['color-link'] = $input['color-link'];
-    $input['mouse-bg-link'] = $input['mouse-bg-link'];
-    $input['mouse-color-link'] = $input['mouse-color-link'];
+    $input['bg-link'] = wp_filter_nohtml_kses( $input['bg-link'] );
+    $input['color-link'] = wp_filter_nohtml_kses( $input['color-link'] );
+    $input['mouse-bg-link'] = wp_filter_nohtml_kses( $input['mouse-bg-link'] );
+    $input['mouse-color-link'] = wp_filter_nohtml_kses( $input['mouse-color-link'] );
     return $input;
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
-function textHalfImage($gfwLoop, $atts){
+function cgj_textHalfImage($gfwLoop, $atts){
     $returnHtml = "";
     
     if ( $gfwLoop->have_posts() ) :    

@@ -1,7 +1,5 @@
-<?php
-
- 
-function hex2rgba($color, $opacity = false) {
+<?php 
+function cgj_hex2rgba($color, $opacity = false) {
     $default = 'rgba(0,0,0,.5)';
     
 	//Return default if no color provided
@@ -21,23 +19,20 @@ function hex2rgba($color, $opacity = false) {
         return $default;
     }
  
-    //Convert hexadec to rgb
     $rgb =  array_map('hexdec', $hex);
  
-    //Check if opacity is set(rgba or rgb)
     if($opacity){
     	if(abs($opacity) > 1) $opacity = 1.0;
     	$output = 'rgba('.implode(",",$rgb).','.$opacity.')';
     } else {
     	$output = 'rgb('.implode(",",$rgb).')';
     }
- 
-    //Return rgb(a) color string
+
     return $output;
 }
  
 
-function styleCustom() {
+function cgj_styleCustom() {
     global $gfw_options;
     $gfw_options = get_option( 'gfw_options', $gfw_options );
 ?>
@@ -62,7 +57,7 @@ function styleCustom() {
         .glider-arrows.disabled { color: <?php echo $gfw_options['arrows_disable']; ?>; }
     <?php endif;
     if($gfw_options['bg_text'] != ''): 
-    $bgText = hex2rgba($gfw_options['bg_text'], .5); ?>
+    $bgText = cgj_hex2rgba($gfw_options['bg_text'], .5); ?>
         .glider__text { background: <?php echo $bgText; ?>; }
     <?php endif;
     if($gfw_options['text_color'] != ''): ?>
