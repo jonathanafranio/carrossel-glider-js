@@ -71,7 +71,7 @@ function link_meta_box() {
 
 function link_admin(){
     global $post;
-    $metaBoxValor = get_post_meta($post->ID, 'url_link', true);
+    $metaBoxValor = esc_url( get_post_meta($post->ID, 'url_link', true) );
     echo '<label for="url_link">URL: </label>';
     echo '<input type="url" name="url_link" id="url_link" style="width: 100%;" value="'.$metaBoxValor.'" />';
 }
@@ -100,7 +100,9 @@ add_action('save_post', 'save_link');
 
 function save_link(){
     global $post;
-    update_post_meta($post->ID, 'url_link', $_POST['url_link']);
-    update_post_meta($post->ID, 'target_link', $_POST['target_link']);
+    $urlLink = sanitize_text_field( $_POST['url_link'] );
+    $targetLink = sanitize_text_field( $_POST['target_link'] );
+    update_post_meta($post->ID, 'url_link', $urlLink);
+    update_post_meta($post->ID, 'target_link', $targetLink);
 }
 ?>
