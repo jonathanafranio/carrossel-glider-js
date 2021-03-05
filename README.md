@@ -11,13 +11,13 @@ El [Glider.js](https://nickpiscitelli.github.io/Glider.js/), el carrusel en java
 
 ## Project setup
 Em português:
-Baixe o plugin e adicionar no seu site/blog em WordPress, no diretorio: wp-content/plugins/ e no painel de admin do WordPress ative o plugin e divirta se.
+Baixe o [plugin](https://wordpress.org/plugins/carousel-glider-js/) e adicionar no seu site/blog em WordPress, no diretorio: wp-content/plugins/ e no painel de admin do WordPress ative o plugin e divirta se.
 
 In English:
-Download the plugin and add it to your WordPress site/blog, in the directory: wp-content/plugins/ and in the WordPress admin panel activate the plugin and have fun.
+Download the [plugin](https://wordpress.org/plugins/carousel-glider-js/) and add it to your WordPress site/blog, in the directory: wp-content/plugins/ and in the WordPress admin panel activate the plugin and have fun.
 
 En español:
-Descarga el complemento y agrégalo a tu sitio/blog de WordPress, en el directorio: wp-content/plugins/ y en el panel de administración de WordPress activa el complemento y diviértete.
+Descarga el [plugin](https://wordpress.org/plugins/carousel-glider-js/) y agrégalo a tu sitio/blog de WordPress, en el directorio: wp-content/plugins/ y en el panel de administración de WordPress activa el complemento y diviértete.
 
 ## Como usar carousel?
 Em português:
