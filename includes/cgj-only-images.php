@@ -18,6 +18,7 @@ function cgj_only_images($gfwLoop, $atts){
         while ( $gfwLoop->have_posts() ) : $gfwLoop->the_post();
             global $post;
             $linkCarousel = get_post_meta($post->ID, 'url_link', true);
+            $target_link = get_post_meta($post->ID, 'target_link', true);
             $htmlCarousel .= '<div>';
             if($linkCarousel != '') $htmlCarousel .= '<a href="'.$linkCarousel.'" target="'.$target_link.'" class="glider__link">';
             else $htmlCarousel .= '<span  class="glider__item">'; 

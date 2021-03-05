@@ -18,6 +18,7 @@ function cgj_smallThumb($gfwLoop, $atts){
         while ( $gfwLoop->have_posts() ) : $gfwLoop->the_post();
             global $post;
             $linkCarousel = get_post_meta($post->ID, 'url_link', true);
+            $target_link = get_post_meta($post->ID, 'target_link', true);
             $htmlCarousel .= '<div>';
             $htmlCarousel .= '<span  class="glider__small-thumb">'; 
                 

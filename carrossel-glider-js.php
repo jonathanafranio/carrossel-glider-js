@@ -62,7 +62,7 @@ function cgj_carousel_post( $gfw_post ) {
     if($atts['design'] == 'text-full-image'){
         $return_glider = cgj_textFullImage($gfwLoop, $atts);
     } elseif ($atts['design'] == 'text-half-image'){
-        $return_glider = textHalfImage($gfwLoop, $atts);
+        $return_glider = cgj_textHalfImage($gfwLoop, $atts);
     } elseif ($atts['design'] == 'only_text'){
         $return_glider = cgj_onlyText($gfwLoop, $atts);
     } elseif ($atts['design'] == 'small-thumb'){
