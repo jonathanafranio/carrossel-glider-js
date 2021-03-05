@@ -1,9 +1,11 @@
 === Carrossel with Glider.js ===
 Contributors: jonathanafranio89
+Donate link: https://psdtohtmlandcss.com.br/jonathan/glider-js/
 Tags: slider, carousel
 Requires at least: 1.0
 Tested up to: 5.6.2
 Stable tag: 1.0.0
+Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -24,7 +26,7 @@ Glider.js, Carousel in pure javascript (vanilla.js) for WP
 7. screenshot-7.png
 8. screenshot-8.png
 
-= Docs and support =
+== Frequently Asked Questions ==
 
 You can find [docs](https://psdtohtmlandcss.com.br/jonathan/glider-js/), [git](https://github.com/jonathanafranio/carrossel-glider-js/).  When you are unable to find what you are looking for in the documentation, send an email to jonathan.afranio.s@gmail.com 
 
@@ -34,3 +36,7 @@ You can find [docs](https://psdtohtmlandcss.com.br/jonathan/glider-js/), [git](h
 1. Activate the plugin through the **Plugins** screen (**Plugins > Installed Plugins**).
 
 You will find **Carousel** menu in your WordPress admin screen.
+
+== Changelog ==
+
+== Upgrade Notice ==
