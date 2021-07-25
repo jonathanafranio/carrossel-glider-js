@@ -7,8 +7,10 @@ Author: Jonathan Afranio
 Author URI: https://psdtohtmlandcss.com.br/jonathan/
 Text Domain: carrossel-glider-js
 License: GPLv2 or later
-Version: 1.0.0
+Version: 1.0.1
+Domain Path: /languages
 */
+
 
 include 'includes/cgj-options.php';
 
@@ -108,5 +110,10 @@ function cgj_glider_scripts (){
 }
 // Scrips e CSS
 add_action( 'wp_enqueue_scripts', 'cgj_glider_scripts');
+
+function cgj_load_textdomain() {
+    load_plugin_textdomain( 'carrossel-glider-js', false, basename( dirname( __FILE__ ) ) . '/languages/' );
+}
+add_action( 'plugins_loaded', 'cgj_load_textdomain' );
 
 ?>

@@ -17,13 +17,13 @@ function gfw_register_settings() {
     // Register settings and call sanitation functions
     register_setting( 'gfw_theme_options', 'gfw_options', 'gfw_validate_options' );
 }    
-add_action( 'admin_init', 'gfw_register_settings' );
+add_action('admin_init', 'gfw_register_settings');
 
 function gfw_theme_options() {
     // Add theme options page to the addmin menu
-    add_menu_page( 'Carousel options', 'Carousel Config', 'edit_theme_options', 'carousel_options', 'gfw_theme_options_page' );
+    add_menu_page( 'Carousel options', __('Carousel Config', 'carrossel-glider-js'), 'edit_theme_options', 'carousel_options', 'gfw_theme_options_page' );
 }    
-add_action( 'admin_menu', 'gfw_theme_options' );
+add_action('admin_menu', 'gfw_theme_options');
 
 
 function gfw_theme_options_page(){
@@ -31,7 +31,7 @@ function gfw_theme_options_page(){
     if ( ! isset( $_REQUEST['updated'] ) ) $_REQUEST['updated'] = false; // This checks whether the form has just been submitted. 
     ?>
     <div class="wrap">
-        <h2>Carousel Options</h2>
+        <h2><?php echo __('Carousel Options', 'carrossel-glider-js'); ?></h2>
 
         <form method="post" action="options.php" id="form-upgrade-glider">
             <?php $settings = get_option( 'gfw_options', $gfw_options ); ?>
@@ -46,19 +46,19 @@ function gfw_theme_options_page(){
 						<div class="content-options">
 							<table class="form-table">
                                 <tr valign="top">
-									<th scope="row"><label for="arrows_colors">Cores das setas:</label></th>
+									<th scope="row"><label for="arrows_colors"><?php echo __('Arrow colors', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="arrows_colors" name="gfw_options[arrows_colors]" type="color" value="<?php  esc_attr_e($settings['arrows_colors']); ?>"  style="width: 250px" />
 									</td>
 								</tr>
                                 <tr valign="top">
-									<th scope="row"><label for="mouse_arrows">Cores das setas com mouse acima:</label></th>
+									<th scope="row"><label for="mouse_arrows"><?php echo __('Arrow colors with mouse over', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="mouse_arrows" name="gfw_options[mouse_arrows]" type="color" value="<?php  esc_attr_e($settings['mouse_arrows']); ?>" style="width: 250px" />
 									</td>
 								</tr>
                                 <tr valign="top">
-									<th scope="row"><label for="arrows_disable">Cores das setas desativadas:</label></th>
+									<th scope="row"><label for="arrows_disable"><?php echo __('Arrow colors disabled', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="arrows_disable" name="gfw_options[arrows_disable]" type="color" value="<?php  esc_attr_e($settings['arrows_disable']); ?>" style="width: 250px" />
 									</td>
@@ -67,13 +67,13 @@ function gfw_theme_options_page(){
                                     <td colspan="2"><hr /></td>
                                 </tr>
                                 <tr valign="top">
-									<th scope="row"><label for="bullets_colors">Bullets Cores:</label></th>
+									<th scope="row"><label for="bullets_colors"><?php echo __('Bullets Colors', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="bullets_colors" name="gfw_options[bullets_colors]" type="color" value="<?php  esc_attr_e($settings['bullets_colors']); ?>" style="width: 250px" />
 									</td>
 								</tr>
                                 <tr valign="top">
-									<th scope="row"><label for="mouse_bullets">Bullets Cores com mouse acima:</label></th>
+									<th scope="row"><label for="mouse_bullets"><?php echo __('Bullets Colors with mouse over', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="mouse_bullets" name="gfw_options[mouse_bullets]" type="color" value="<?php  esc_attr_e($settings['mouse_bullets']); ?>" style="width: 250px" />
 									</td>
@@ -82,17 +82,17 @@ function gfw_theme_options_page(){
                                     <td colspan="2"><hr /></td>
                                 </tr>
                                 <tr valign="top">
-                                    <th colspan="2"><h3>Cores para text-full-image e text-half-image</h3></th>
+                                    <th colspan="2"><h3><?php echo __('Colors for', 'carrossel-glider-js'); ?> "text-full-image" <?php echo __('and', 'carrossel-glider-js'); ?> "text-half-image":</h3></th>
                                 </tr>
                                 <tr valign="top">
-									<th scope="row"><label for="bg_text">Fundo do Texto:</label></th>
+									<th scope="row"><label for="bg_text"><?php echo __('Background text', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="bg_text" name="gfw_options[bg_text]" type="color" value="<?php  esc_attr_e($settings['bg_text']); ?>" style="width: 250px" />
 									</td>
 								</tr>
                                 
                                 <tr valign="top">
-									<th scope="row"><label for="text_color">Texto Cores:</label></th>
+									<th scope="row"><label for="text_color"><?php echo __('Text color', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="text_color" name="gfw_options[text_color]" type="color" value="<?php  esc_attr_e($settings['text_color']); ?>" style="width: 250px" />
 									</td>
@@ -101,10 +101,10 @@ function gfw_theme_options_page(){
                                     <td colspan="2"><hr /></td>
                                 </tr>
                                 <tr valign="top">
-                                    <th colspan="2"><h3>Cores para only_text e small-thumb</h3></th>
+                                    <th colspan="2"><h3><?php echo __('Colors for', 'carrossel-glider-js'); ?> "only_text" <?php echo __('and', 'carrossel-glider-js'); ?> "small-thumb":</h3></th>
                                 </tr>
                                 <tr valign="top">
-									<th scope="row"><label for="only_color">Texto Cores:</label></th>
+									<th scope="row"><label for="only_color"><?php echo __('Text color', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="only_color" name="gfw_options[only_color]" type="color" value="<?php  esc_attr_e($settings['only_color']); ?>" style="width: 250px" />
 									</td>
@@ -114,13 +114,13 @@ function gfw_theme_options_page(){
                                     <td colspan="2"><hr /></td>
                                 </tr>
                                 <tr valign="top">
-									<th scope="row"><label for="bg-link">Background Link:</label></th>
+									<th scope="row"><label for="bg-link"><?php echo __('Background Link', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="bg-link" name="gfw_options[bg-link]" type="color" value="<?php  esc_attr_e($settings['bg-link']); ?>" style="width: 250px" />
 									</td>
 								</tr>
                                 <tr valign="top">
-									<th scope="row"><label for="color-link">Cor do texto Link:</label></th>
+									<th scope="row"><label for="color-link"><?php echo __('Link text color', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="color-link" name="gfw_options[color-link]" type="color" value="<?php  esc_attr_e($settings['color-link']); ?>" style="width: 250px" />
 									</td>
@@ -129,13 +129,13 @@ function gfw_theme_options_page(){
                                     <td colspan="2"><hr /></td>
                                 </tr>
                                 <tr valign="top">
-									<th scope="row"><label for="mouse-bg-link">Background Link com mouse acima:</label></th>
+									<th scope="row"><label for="mouse-bg-link"><?php echo __('Background Link with mouse over', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="mouse-bg-link" name="gfw_options[mouse-bg-link]" type="color" value="<?php  esc_attr_e($settings['mouse-bg-link']); ?>" style="width: 250px" />
 									</td>
 								</tr>
                                 <tr valign="top">
-									<th scope="row"><label for="mouse-color-link">Cor do texto Link com mouse acima:</label></th>
+									<th scope="row"><label for="mouse-color-link"><?php echo __('Link text color with mouse over', 'carrossel-glider-js'); ?>:</label></th>
 									<td>
 										<input id="mouse-color-link" name="gfw_options[mouse-color-link]" type="color" value="<?php  esc_attr_e($settings['mouse-color-link']); ?>" style="width: 250px" />
 									</td>
@@ -148,7 +148,7 @@ function gfw_theme_options_page(){
             </div>
 
             <div class="content-options">
-				<p class="submit"><input type="submit" class="button-primary" value="Savar" /> &nbsp; &nbsp; <input type="reset" class="button-secondary" value="Limpar" id="resert-btn" /></p>
+				<p class="submit"><input type="submit" class="button-primary" value="<?php echo __('Save', 'carrossel-glider-js'); ?>" /> &nbsp; &nbsp; <input type="reset" class="button-secondary" value="<?php echo __('Reset', 'carrossel-glider-js'); ?>" id="resert-btn" /></p>
 			</div>
         </form>
 

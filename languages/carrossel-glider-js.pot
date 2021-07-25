@@ -1,0 +1,186 @@
+# Copyright (C) 2021 Jonathan Afranio
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Carrossel with Glider.js 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/carrossel-glider-js\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-07-25T01:22:34-03:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.5.0\n"
+"X-Domain: carrossel-glider-js\n"
+
+#. Plugin Name of the plugin
+msgid "Carrossel with Glider.js"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://psdtohtmlandcss.com.br/jonathan/glider-js/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Glider.js, o Carousel em javascript puro (vanilla.js) para WP"
+msgstr ""
+
+#. Author of the plugin
+msgid "Jonathan Afranio"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://psdtohtmlandcss.com.br/jonathan/"
+msgstr ""
+
+#: includes/cgj-options.php:24
+msgid "Carousel Config"
+msgstr ""
+
+#: includes/cgj-options.php:34
+msgid "Carousel Options"
+msgstr ""
+
+#: includes/cgj-options.php:49
+msgid "Arrow colors"
+msgstr ""
+
+#: includes/cgj-options.php:55
+msgid "Arrow colors with mouse over"
+msgstr ""
+
+#: includes/cgj-options.php:61
+msgid "Arrow colors disabled"
+msgstr ""
+
+#: includes/cgj-options.php:70
+msgid "Bullets Colors"
+msgstr ""
+
+#: includes/cgj-options.php:76
+msgid "Bullets Colors with mouse over"
+msgstr ""
+
+#: includes/cgj-options.php:85
+#: includes/cgj-options.php:104
+msgid "Colors for"
+msgstr ""
+
+#: includes/cgj-options.php:85
+#: includes/cgj-options.php:104
+msgid "and"
+msgstr ""
+
+#: includes/cgj-options.php:88
+msgid "Background text"
+msgstr ""
+
+#: includes/cgj-options.php:95
+#: includes/cgj-options.php:107
+msgid "Text color"
+msgstr ""
+
+#: includes/cgj-options.php:117
+msgid "Background Link"
+msgstr ""
+
+#: includes/cgj-options.php:123
+msgid "Link text color"
+msgstr ""
+
+#: includes/cgj-options.php:132
+msgid "Background Link with mouse over"
+msgstr ""
+
+#: includes/cgj-options.php:138
+msgid "Link text color with mouse over"
+msgstr ""
+
+#: includes/cgj-options.php:151
+msgid "Save"
+msgstr ""
+
+#: includes/cgj-options.php:151
+msgid "Reset"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:6
+msgid "Add New"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:8
+msgid "Edit Carousel"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:9
+msgid "New Carousel"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:10
+msgid "View Carousel"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:11
+msgid "Search Carousel"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:12
+msgid "No records found"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:13
+msgid "No records found in trash"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:15
+msgid "Carousel"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:41
+msgid "Category"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:42
+msgid "Categories"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:43
+#: includes/cgj_custom-post-carousel.php:44
+msgid "Add new category"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:45
+#: includes/cgj_custom-post-carousel.php:46
+msgid "Edit Category Topic"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:47
+msgid "View Category Topic"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:48
+msgid "Search a category"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:68
+msgid "Link"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:69
+msgid "Target"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:82
+msgid "Open in the same window?"
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:85
+#: includes/cgj_custom-post-carousel.php:87
+msgid "In the same window."
+msgstr ""
+
+#: includes/cgj_custom-post-carousel.php:91
+#: includes/cgj_custom-post-carousel.php:93
+msgid "In new window."
+msgstr ""
