@@ -16,16 +16,6 @@ function gliderSlide(gliderId) {
     var infinit = document.getElementById(gliderId).getAttribute('data-infinit');
 
 
-    //console.log('deskTopShow', deskTopShow);
-    //console.log('lapTopShow', lapTopShow);
-    //console.log('tabletShow', tabletShow);
-    //console.log('mobileShow', mobileShow);
-    //console.log('dots', dots);
-    //console.log('arrows', arrows);
-    //console.log('infinit', infinit);
-    
-
-
     var objArrows = {
         prev: `#glider-prev-${gliderId}`,
         next: `#glider-next-${gliderId}`
@@ -66,4 +56,5 @@ function gliderSlide(gliderId) {
             }
         ]
     });
+    document.getElementById(gliderId).classList.add('-is-loaded');
 }
