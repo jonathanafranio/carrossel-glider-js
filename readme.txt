@@ -1,9 +1,9 @@
 === Carrossel with Glider.js ===
 Contributors: jonathanafranio89
-Donate link: https://psdtohtmlandcss.com.br/jonathan/glider-js/
+Donate link: https://github.com/jonathanafranio/carrossel-glider-js
 Tags: slider, carousel
 Requires at least: 1.0
-Tested up to: 5.8
+Tested up to: 6.1
 Stable tag: 1.0.2
 Requires PHP: 5.2.4
 License: GPLv2 or later
@@ -28,7 +28,7 @@ Glider.js, Carousel in pure javascript (vanilla.js) for WP
 
 == Frequently Asked Questions ==
 
-You can find [docs](https://psdtohtmlandcss.com.br/jonathan/glider-js/), [git](https://github.com/jonathanafranio/carrossel-glider-js/).  When you are unable to find what you are looking for in the documentation, send an email to jonathan.afranio.s@gmail.com 
+You can find [docs](https://github.com/jonathanafranio/carrossel-glider-js/).  When you are unable to find what you are looking for in the documentation, send an email to jonathan.afranio.s@gmail.com 
 
 == Installation ==
 
