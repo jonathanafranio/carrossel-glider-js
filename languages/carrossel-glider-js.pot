@@ -19,7 +19,7 @@ msgid "Carrossel with Glider.js"
 msgstr ""
 
 #. Plugin URI of the plugin
-msgid "https://psdtohtmlandcss.com.br/jonathan/glider-js/"
+msgid "https://github.com/jonathanafranio/carrossel-glider-js"
 msgstr ""
 
 #. Description of the plugin
@@ -31,7 +31,7 @@ msgid "Jonathan Afranio"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "https://psdtohtmlandcss.com.br/jonathan/"
+msgid "https://github.com/jonathanafranio/carrossel-glider-js"
 msgstr ""
 
 #: includes/cgj-options.php:24
