@@ -4,25 +4,30 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Carrossel with Glider.js 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/carrossel-glider-js\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Jonathan Afranio <jonathan.afranio.s@gmail.com>\n"
+"Language-Team: Português do Brasil <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "POT-Creation-Date: 2021-07-25T01:22:34-03:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-06-15 14:00-0300\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: carrossel-glider-js\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Plugin Name of the plugin
+msgctxt "Carrossel with Glider.js"
 msgid "Carrossel with Glider.js"
 msgstr ""
 
 #. Plugin URI of the plugin
+msgctxt "https://github.com/jonathanafranio/carrossel-glider-js"
 msgid "https://github.com/jonathanafranio/carrossel-glider-js"
 msgstr ""
 
 #. Description of the plugin
+msgctxt "Glider.js, o Carousel em javascript puro (vanilla.js) para WP"
 msgid "Glider.js, o Carousel em javascript puro (vanilla.js) para WP"
 msgstr ""
 
